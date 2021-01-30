@@ -1,0 +1,43 @@
+name: fahita
+description: A new Flutter project.
+
+publish_to: 'none'
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.0
+  shimmer:
+  carousel_pro: ^1.0.0
+  cached_network_image:
+  lottie: ^0.7.0+1
+  curved_navigation_bar:
+  flutter_screenutil:
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: cairo
+      fonts:
+        - asset: assets/fonts/Tajawal-Regular.ttf
+    - family: caira
+      fonts:
+        - asset: assets/fonts/cairo_regular.ttf
