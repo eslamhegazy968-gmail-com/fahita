@@ -11,6 +11,7 @@ class SearchFeild extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       child: TextFormField(
         controller: controller,
+        keyboardType:TextInputType.text ,
         decoration: InputDecoration(
           hintText: "SEARCH PRODUCTS",
           prefixIcon: Icon(Icons.search),

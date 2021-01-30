@@ -4,7 +4,7 @@ import 'package:fahita/src/helper/theme.dart';
 import 'package:fahita/src/view/screen/productDetilsScreen.dart';
 import 'package:fahita/src/view/widget/customAppBar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/screenutil.dart';
+
 
 class ProductsScreen extends StatefulWidget {
   @override

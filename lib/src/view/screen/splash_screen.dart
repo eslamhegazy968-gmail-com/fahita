@@ -2,8 +2,8 @@ import 'package:fahita/src/helper/theme.dart';
 import 'package:fahita/src/view/screen/auth/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
-
 import 'package:shimmer/shimmer.dart';
+import 'auth/start_app.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     Timer(Duration(seconds: 3), () {
       Navigator.of(context).pushAndRemoveUntil(
-          MaterialPageRoute(builder: (BuildContext context) => LoginScreen()),
+          MaterialPageRoute(builder: (BuildContext context) => start_app()),
           (route) => false);
     });
     super.initState();

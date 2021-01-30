@@ -19,6 +19,7 @@ dependencies:
   lottie: ^0.7.0+1
   curved_navigation_bar:
   flutter_screenutil:
+  sms_autofill: ^1.2.1
 
 
 dev_dependencies:
@@ -33,6 +34,7 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/phone.png
 
   fonts:
     - family: cairo
@@ -41,3 +43,11 @@ flutter:
     - family: caira
       fonts:
         - asset: assets/fonts/cairo_regular.ttf
+    - family: PottaOne
+      fonts:
+        - asset: assets/fonts/PottaOne-Regular.ttf
+          weight: 400
+    - family: Acme
+      fonts:
+        - asset: assets/fonts/Acme-Regular.ttf
+          weight: 400

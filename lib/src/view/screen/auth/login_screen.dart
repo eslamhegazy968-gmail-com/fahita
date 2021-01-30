@@ -1,5 +1,7 @@
 import 'package:fahita/src/helper/navigat.dart';
 import 'package:fahita/src/helper/theme.dart';
+import 'package:fahita/src/view/screen/auth/pin_code.dart';
+import 'package:fahita/src/view/screen/auth/send_pin_code.dart';
 import 'package:fahita/src/view/screen/main_screen.dart';
 import 'package:fahita/src/view/widget/TextFields.dart';
 import 'package:fahita/src/view/widget/signup_button.dart';
@@ -43,10 +45,10 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           Container(
             width: double.infinity,
-            // height: ,
+            height:MediaQuery.of(context).size.height*0.80 ,
             decoration: BoxDecoration(
                 color: primaryColor.withOpacity(0.5),
-                borderRadius: BorderRadius.circular(30)),
+                borderRadius: BorderRadius.only(topLeft: Radius.circular(30),topRight: Radius.circular(30))),
             child: Padding(
               padding: const EdgeInsets.only(left: 20, right: 20),
               child: SingleChildScrollView(
@@ -110,9 +112,16 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: Container(
                         padding: EdgeInsets.all(8),
                         alignment: Alignment.topRight,
-                        child: Text(
-                          "Forgot Password?",
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (_){
+                              return send_n_phone();
+                            }));
+                          },
+                          child: Text(
+                            "Forgot Password?",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
                         ),
                       ),
                     ),
@@ -172,7 +181,4 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  facebooklinked() {}
-
-  googlelinked() {}
 }
