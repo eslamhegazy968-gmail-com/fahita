@@ -12,7 +12,7 @@ class _CartPageState extends State<CartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: customAppBar(context, "Shopping Cart", icon: false),
+      appBar: customAppBar(context, "Shopping Cart",),
       bottomNavigationBar: ButtomBarCart(),
       // backgroundColor: Color.fromRGBO(220, 220, 220, 1.0),
       body: SafeArea(
