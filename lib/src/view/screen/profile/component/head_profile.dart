@@ -1,7 +1,7 @@
 import 'package:fahita/src/helper/theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'curve_header_screen.dart';
+import '../../../widget/curve_header_screen.dart';
 
 class HeaderProfile extends StatelessWidget {
   const HeaderProfile({
@@ -17,7 +17,7 @@ class HeaderProfile extends StatelessWidget {
           ClipPath(
             clipper: myclipper(),
             child: Container(
-              height: MediaQuery.of(context).size.height*0.35,
+              height: MediaQuery.of(context).size.height * 0.35,
               color: primaryColor,
             ),
           ),
@@ -25,16 +25,32 @@ class HeaderProfile extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Center(child: Text("Profile",style: TextStyle(fontSize:25,color: Colors.white,fontFamily: "PottaOne"),)),
-                SizedBox(height: 20,),
+                Center(
+                    child: Text(
+                  "Profile",
+                  style: TextStyle(
+                      fontSize: 25,
+                      color: Colors.white,
+                      fontFamily: "PottaOne"),
+                )),
+                SizedBox(
+                  height: 20,
+                ),
                 CircleAvatar(
                   maxRadius: 50,
                   backgroundImage: AssetImage("assets/images/log.png"),
                   foregroundColor: Colors.white,
                   backgroundColor: Colors.white,
                 ),
-                Text("User Name",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 19,fontFamily: "Acme")),
-                Text("eslamhegazy968@gmail.com",style: TextStyle(color: Colors.grey[700]),),
+                Text("User Name",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 19,
+                        fontFamily: "Acme")),
+                Text(
+                  "eslamhegazy968@gmail.com",
+                  style: TextStyle(color: Colors.grey[700]),
+                ),
               ],
             ),
           ),
